@@ -7,12 +7,12 @@ link = "http://selenium1py.pythonanywhere.com/"
 class TestMainPage1:
 
     @classmethod
-    def setup_class(cls, self):
+    def setup_class(self):
         print("\nstart browser for test suite..")
         self.browser = webdriver.Chrome()
 
     @classmethod
-    def teardown_class(cls, self):
+    def teardown_class(self):
         print("quit browser for test suite..")
         self.browser.quit()
 
